@@ -42,11 +42,11 @@ spec:
               protocol: TCP
           volumeMounts:
             - name: html
-            mountPath: /usr/share/nginx/html
+              mountPath: /usr/share/nginx/html
       volumes:
         - name: html
           configMap:
-            name: {{ .Release.Name }}
+            name: {{ .Release.Name }}-index-html
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
