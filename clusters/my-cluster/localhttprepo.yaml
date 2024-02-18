@@ -1,9 +1,9 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2]
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: myhelmrepo]
-  namespace: default]
+  name: myhelmrepo
+  namespace: default
 spec:
   interval: 5m0s
   url: http://192.168.5.115:8080
