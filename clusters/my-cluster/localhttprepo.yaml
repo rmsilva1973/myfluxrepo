@@ -12,6 +12,7 @@ spec:
 ---
 apiVersion: v1
 kind: Secret
+metadata:
   name: myhelmrepo-secret
   namespace: default
 stringData:
