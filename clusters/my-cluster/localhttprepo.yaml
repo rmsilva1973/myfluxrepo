@@ -9,11 +9,3 @@ spec:
   url: http://192.168.5.115:8080
   secretRef:
     name: myhelmrepo-secret
----
-apiVersion: v1
-kind: Secret
-  name: myhelmrepo-secret
-  namespace: default
-stringData:
-  username: chartuser
-  password: mypass
